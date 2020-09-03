@@ -13,7 +13,7 @@ class HomeController extends Controller
         $user = Auth::user();
 
         // ログインユーザーに紐づくフォルダを一つ取得する
-        $folser = $user->folders()->first();
+        $folder = $user->folders()->first();
 
         // まだ一つもフォルダを作っていなければホームページをレスポンスする
         if (is_null($folder)) {
