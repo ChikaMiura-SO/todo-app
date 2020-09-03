@@ -1,6 +1,6 @@
 <?php
 Route::group(['middleware' => 'auth'], function(){
-  Route::get('/folders/{id}/tasks', 'TaskController@index')->name('tasks.index');
+  Route::get('/folders/{folder}/tasks', 'TaskController@index')->name('tasks.index');
 
   Route::get('/folders/create', 'FolderController@showCreateForm')->name('folders.create');
   Route::post('/folders/create', 'FolderController@create');
