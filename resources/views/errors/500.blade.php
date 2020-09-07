@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col col-md-offset-3 col-md-6">
         <div class="text-center">
-          <p>お探しのページは見つかりませんでした。</p>
+          <p>お探しのページを実行できません。</p>
           <a href="{{ route('home') }}" class="btn">
             ホームへ戻る
           </a>
