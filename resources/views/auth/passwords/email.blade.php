@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col col-md-offset-3 col-md-6">
             <nav class="panel panel-default">
-                <div class="panel -headhing">パスワード再発行</div>
+                <div class="panel-headhing">パスワード再発行</div>
                 <div class="panel-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
