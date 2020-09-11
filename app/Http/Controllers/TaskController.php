@@ -47,7 +47,7 @@ class TaskController extends Controller
         $current_folder->tasks()->save($task);
 
         return redirect()->route('tasks.index', [
-            'id' => $current_folder->id,
+            'folder' => $current_folder->id,
         ]);
     }
 
@@ -69,7 +69,7 @@ class TaskController extends Controller
         $task->save();
 
         return redirect()->route('tasks.index', [
-            'id' => $task->folder_id,
+            'folder' => $task->folder_id,
         ]);
     }
 }
